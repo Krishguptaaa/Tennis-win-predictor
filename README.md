@@ -4,7 +4,7 @@ A machine learning web app built with **CatBoost** and **Streamlit** to predict 
 
 ## 🚀 Demo
 
-👉 Try it live: [Coming Soon]
+👉 Try it live: https://jkwqkwz3pybyncjygrkzcq.streamlit.app/
 
 ## 🧠 How it Works
 
@@ -22,7 +22,8 @@ The model is trained using historical ATP data and leverages CatBoost for accura
 
 ## 📷 Preview
 
-![App Screenshot](screenshot.png)
+<img width="1445" height="882" alt="image" src="https://github.com/user-attachments/assets/f355dec2-9dc8-4181-95df-3d133a36f7f2" />
+
 
 ## 🛠 Tech Stack
 
@@ -30,7 +31,6 @@ The model is trained using historical ATP data and leverages CatBoost for accura
 - **Pandas** – For data preprocessing and feature engineering
 - **Streamlit** – For building and deploying the interactive web app
 - **Python** – Core programming language
-
-## 🗂️ Repository Structure
+- **Jupyter Notebook** – For exploratory data analysis and experimentation
 
 
