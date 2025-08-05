@@ -19,9 +19,12 @@ st.write("**For rank and points please refer to real time data**" )
 
 col1,col2 = st.columns(2)
 
-player_df = pd.read_excel(r"C:\Users\KRISH GUPTA\Desktop\github\Tennis-win-predictor\src\data\PLAYER_INFO.xlsx")
-player_names = player_df['NAME']
+# Get the absolute path to the Excel file relative to current script
+excel_path = os.path.join(os.path.dirname(__file__), "data", "PLAYER_INFO.xlsx")
 
+player_df = pd.read_excel(excel_path)
+
+player_names = player_df['NAME']
 
 with col1:
     player1 = st.selectbox("Player 1",player_names)
