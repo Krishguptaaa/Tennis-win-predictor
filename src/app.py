@@ -2,9 +2,15 @@ import streamlit as st
 import datetime
 import pandas as pd
 from catboost import CatBoostClassifier
+import os
+
+# Get the absolute path to the model file
+model_path = os.path.join(os.path.dirname(__file__), "tennis_model.cbm")
+
 
 model = CatBoostClassifier()
-model.load_model(r"C:\Users\KRISH GUPTA\Desktop\github\Tennis-win-predictor\src\tennis_model.cbm")
+#model.load_model(r"C:\Users\KRISH GUPTA\Desktop\github\Tennis-win-predictor\src\tennis_model.cbm")
+model.load_model(model_path)
 
 st.title("_Tennis match predictor_ :tennis:")
 
