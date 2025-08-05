@@ -4,7 +4,7 @@ import pandas as pd
 from catboost import CatBoostClassifier
 
 model = CatBoostClassifier()
-model.load_model(r"C:\Users\KRISH GUPTA\tennispredictor\tennis_model.cbm")
+model.load_model(r"C:\Users\KRISH GUPTA\Desktop\github\Tennis-win-predictor\src\tennis_model.cbm")
 
 st.title("_Tennis match predictor_ :tennis:")
 
@@ -13,7 +13,7 @@ st.write("**For rank and points please refer to real time data**" )
 
 col1,col2 = st.columns(2)
 
-player_df = pd.read_excel(r"C:\Users\KRISH GUPTA\tennispredictor\data\PLAYER_INFO.xlsx")
+player_df = pd.read_excel(r"C:\Users\KRISH GUPTA\Desktop\github\Tennis-win-predictor\src\data\PLAYER_INFO.xlsx")
 player_names = player_df['NAME']
 
 
